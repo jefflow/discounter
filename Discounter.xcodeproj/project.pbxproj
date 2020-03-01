@@ -9,24 +9,26 @@
 /* Begin PBXBuildFile section */
 		369DC40F240609BA00E988D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC40E240609BA00E988D0 /* AppDelegate.swift */; };
 		369DC411240609BA00E988D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC410240609BA00E988D0 /* SceneDelegate.swift */; };
-		369DC413240609BA00E988D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC412240609BA00E988D0 /* ViewController.swift */; };
+		369DC413240609BA00E988D0 /* DiscounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC412240609BA00E988D0 /* DiscounterViewController.swift */; };
 		369DC416240609BA00E988D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369DC414240609BA00E988D0 /* Main.storyboard */; };
 		369DC419240609BA00E988D0 /* Discounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 369DC417240609BA00E988D0 /* Discounter.xcdatamodeld */; };
 		369DC41B240609BB00E988D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369DC41A240609BB00E988D0 /* Assets.xcassets */; };
 		369DC41E240609BB00E988D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369DC41C240609BB00E988D0 /* LaunchScreen.storyboard */; };
+		369DC46B240B39CD00E988D0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC46A240B39CD00E988D0 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		369DC40B240609BA00E988D0 /* Discounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		369DC40E240609BA00E988D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		369DC410240609BA00E988D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		369DC412240609BA00E988D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		369DC412240609BA00E988D0 /* DiscounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscounterViewController.swift; sourceTree = "<group>"; };
 		369DC415240609BA00E988D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		369DC418240609BA00E988D0 /* Discounter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Discounter.xcdatamodel; sourceTree = "<group>"; };
 		369DC41A240609BB00E988D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		369DC41D240609BB00E988D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		369DC41F240609BB00E988D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		369DC469240B312200E988D0 /* Discounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Discounter.entitlements; sourceTree = "<group>"; };
+		369DC46A240B39CD00E988D0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +64,13 @@
 				369DC469240B312200E988D0 /* Discounter.entitlements */,
 				369DC40E240609BA00E988D0 /* AppDelegate.swift */,
 				369DC410240609BA00E988D0 /* SceneDelegate.swift */,
-				369DC412240609BA00E988D0 /* ViewController.swift */,
+				369DC412240609BA00E988D0 /* DiscounterViewController.swift */,
 				369DC414240609BA00E988D0 /* Main.storyboard */,
 				369DC41A240609BB00E988D0 /* Assets.xcassets */,
 				369DC41C240609BB00E988D0 /* LaunchScreen.storyboard */,
 				369DC41F240609BB00E988D0 /* Info.plist */,
 				369DC417240609BA00E988D0 /* Discounter.xcdatamodeld */,
+				369DC46A240B39CD00E988D0 /* ResultsViewController.swift */,
 			);
 			path = Discounter;
 			sourceTree = "<group>";
@@ -143,9 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				369DC413240609BA00E988D0 /* ViewController.swift in Sources */,
+				369DC413240609BA00E988D0 /* DiscounterViewController.swift in Sources */,
 				369DC40F240609BA00E988D0 /* AppDelegate.swift in Sources */,
 				369DC411240609BA00E988D0 /* SceneDelegate.swift in Sources */,
+				369DC46B240B39CD00E988D0 /* ResultsViewController.swift in Sources */,
 				369DC419240609BA00E988D0 /* Discounter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
