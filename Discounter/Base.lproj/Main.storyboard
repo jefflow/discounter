@@ -31,25 +31,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-Ok-dn6" userLabel="Original Price Field">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Price" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-Ok-dn6" userLabel="Original Price Field">
                                 <rect key="frame" x="20" y="178" width="374" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="xH7-Ef-Z9f"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Percent Off" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-Iv-jzw" userLabel="Percent Off Field">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Percent Off" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-Iv-jzw" userLabel="Percent Off Field">
                                 <rect key="frame" x="20" y="287" width="374" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="lZv-tq-Ufo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="doneAccessory" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-TP-3EQ">
-                                <rect key="frame" x="175" y="412" width="64" height="30"/>
-                                <state key="normal" title="Calculate"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-TP-3EQ" customClass="CustomButton" customModule="Discounter" customModuleProvider="target">
+                                <rect key="frame" x="117" y="413" width="180" height="70"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="P4j-ll-rZU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="37"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="calculatePressed:" destination="D7J-0n-AhJ" eventType="touchUpInside" id="BAw-ZB-hJ7"/>
                                     <segue destination="cqc-AW-lBR" kind="presentation" identifier="goToResults" id="LJA-9h-ZGX"/>
@@ -58,12 +76,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="NZ7-TP-3EQ" firstAttribute="top" secondItem="yLH-Iv-jzw" secondAttribute="bottom" constant="49" id="46g-hS-cbb"/>
                             <constraint firstItem="6Ql-Ok-dn6" firstAttribute="trailing" secondItem="0jh-M6-5mf" secondAttribute="trailingMargin" id="8Gy-WG-GHD"/>
                             <constraint firstItem="6Ql-Ok-dn6" firstAttribute="leading" secondItem="0jh-M6-5mf" secondAttribute="leadingMargin" id="9Ex-zm-5Dc"/>
+                            <constraint firstItem="NZ7-TP-3EQ" firstAttribute="centerY" secondItem="0jh-M6-5mf" secondAttribute="centerY" id="Brc-lN-PUy"/>
+                            <constraint firstItem="NZ7-TP-3EQ" firstAttribute="centerX" secondItem="yLH-Iv-jzw" secondAttribute="centerX" id="DyI-Lh-SqC"/>
                             <constraint firstItem="6Ql-Ok-dn6" firstAttribute="top" secondItem="tU8-P7-6UY" secondAttribute="top" constant="38" id="Gvp-L5-dM1"/>
-                            <constraint firstItem="yLH-Iv-jzw" firstAttribute="centerX" secondItem="NZ7-TP-3EQ" secondAttribute="centerX" id="J8b-Af-66N"/>
+                            <constraint firstItem="NZ7-TP-3EQ" firstAttribute="leading" secondItem="tU8-P7-6UY" secondAttribute="leading" constant="117" id="RzJ-RH-6g1"/>
                             <constraint firstItem="yLH-Iv-jzw" firstAttribute="top" secondItem="6Ql-Ok-dn6" secondAttribute="bottom" constant="32" id="ZKo-zN-vLU"/>
-                            <constraint firstItem="NZ7-TP-3EQ" firstAttribute="top" secondItem="yLH-Iv-jzw" secondAttribute="bottom" constant="48" id="dGC-Z2-1SI"/>
                             <constraint firstItem="yLH-Iv-jzw" firstAttribute="trailing" secondItem="6Ql-Ok-dn6" secondAttribute="trailing" id="qz8-bC-yXe"/>
                             <constraint firstItem="yLH-Iv-jzw" firstAttribute="leading" secondItem="6Ql-Ok-dn6" secondAttribute="leading" id="vwz-bS-5QR"/>
                         </constraints>
@@ -87,20 +107,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wug-em-PfC">
-                                <rect key="frame" x="121" y="648" width="172" height="64"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="rjU-nP-VTq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Got It">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="dismissModal:" destination="cqc-AW-lBR" eventType="touchUpInside" id="zfA-aA-86g"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agp-Tm-NWd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                                 <subviews>
@@ -117,6 +123,25 @@
                                     <constraint firstItem="msT-1o-96q" firstAttribute="centerY" secondItem="agp-Tm-NWd" secondAttribute="centerY" id="s16-Vt-PWo"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wug-em-PfC" customClass="CustomButton" customModule="Discounter" customModuleProvider="target">
+                                <rect key="frame" x="117" y="647" width="180" height="70"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="rjU-nP-VTq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Got It">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="37"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissModal:" destination="cqc-AW-lBR" eventType="touchUpInside" id="zfA-aA-86g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -124,8 +149,8 @@
                             <constraint firstItem="agp-Tm-NWd" firstAttribute="leading" secondItem="bBg-ST-UMN" secondAttribute="leading" id="8Eh-13-qI1"/>
                             <constraint firstItem="agp-Tm-NWd" firstAttribute="top" secondItem="n1l-Hu-p6k" secondAttribute="top" id="Auq-ok-BAj"/>
                             <constraint firstItem="Wug-em-PfC" firstAttribute="centerX" secondItem="agp-Tm-NWd" secondAttribute="centerX" id="KPj-Gw-rM6"/>
-                            <constraint firstItem="bBg-ST-UMN" firstAttribute="bottom" secondItem="Wug-em-PfC" secondAttribute="bottom" constant="96" id="TrW-VS-yHp"/>
-                            <constraint firstItem="Wug-em-PfC" firstAttribute="leading" secondItem="bBg-ST-UMN" secondAttribute="leading" constant="121" id="Xlp-c8-vpL"/>
+                            <constraint firstItem="bBg-ST-UMN" firstAttribute="bottom" secondItem="Wug-em-PfC" secondAttribute="bottom" constant="91" id="TrW-VS-yHp"/>
+                            <constraint firstItem="Wug-em-PfC" firstAttribute="leading" secondItem="bBg-ST-UMN" secondAttribute="leading" constant="117" id="Xlp-c8-vpL"/>
                             <constraint firstItem="agp-Tm-NWd" firstAttribute="centerX" secondItem="n1l-Hu-p6k" secondAttribute="centerX" id="h4C-aL-m5u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bBg-ST-UMN"/>

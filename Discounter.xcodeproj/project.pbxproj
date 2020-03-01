@@ -15,6 +15,8 @@
 		369DC41B240609BB00E988D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 369DC41A240609BB00E988D0 /* Assets.xcassets */; };
 		369DC41E240609BB00E988D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 369DC41C240609BB00E988D0 /* LaunchScreen.storyboard */; };
 		369DC46B240B39CD00E988D0 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC46A240B39CD00E988D0 /* ResultsViewController.swift */; };
+		369DC471240B7E7600E988D0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC470240B7E7600E988D0 /* CustomButton.swift */; };
+		369DC475240B83B600E988D0 /* KeyboardDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369DC474240B83B600E988D0 /* KeyboardDoneButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		369DC41F240609BB00E988D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		369DC469240B312200E988D0 /* Discounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Discounter.entitlements; sourceTree = "<group>"; };
 		369DC46A240B39CD00E988D0 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		369DC470240B7E7600E988D0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		369DC474240B83B600E988D0 /* KeyboardDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDoneButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +68,33 @@
 				369DC469240B312200E988D0 /* Discounter.entitlements */,
 				369DC40E240609BA00E988D0 /* AppDelegate.swift */,
 				369DC410240609BA00E988D0 /* SceneDelegate.swift */,
-				369DC412240609BA00E988D0 /* DiscounterViewController.swift */,
+				369DC472240B835E00E988D0 /* Controllers */,
 				369DC414240609BA00E988D0 /* Main.storyboard */,
 				369DC41A240609BB00E988D0 /* Assets.xcassets */,
 				369DC41C240609BB00E988D0 /* LaunchScreen.storyboard */,
 				369DC41F240609BB00E988D0 /* Info.plist */,
 				369DC417240609BA00E988D0 /* Discounter.xcdatamodeld */,
-				369DC46A240B39CD00E988D0 /* ResultsViewController.swift */,
+				369DC473240B836B00E988D0 /* Custom UI Components */,
 			);
 			path = Discounter;
+			sourceTree = "<group>";
+		};
+		369DC472240B835E00E988D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				369DC412240609BA00E988D0 /* DiscounterViewController.swift */,
+				369DC46A240B39CD00E988D0 /* ResultsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		369DC473240B836B00E988D0 /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				369DC470240B7E7600E988D0 /* CustomButton.swift */,
+				369DC474240B83B600E988D0 /* KeyboardDoneButton.swift */,
+			);
+			path = "Custom UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +170,10 @@
 			files = (
 				369DC413240609BA00E988D0 /* DiscounterViewController.swift in Sources */,
 				369DC40F240609BA00E988D0 /* AppDelegate.swift in Sources */,
+				369DC471240B7E7600E988D0 /* CustomButton.swift in Sources */,
 				369DC411240609BA00E988D0 /* SceneDelegate.swift in Sources */,
 				369DC46B240B39CD00E988D0 /* ResultsViewController.swift in Sources */,
+				369DC475240B83B600E988D0 /* KeyboardDoneButton.swift in Sources */,
 				369DC419240609BA00E988D0 /* Discounter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
